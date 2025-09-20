@@ -3,30 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StopWatch</title>
+    <title>project</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Add this inside the <head> tag -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-/>
-
   </head>
   <body>
-    <div class=" container">
-      <div class="clockHolder">
-        <div class="timeHolder">
-          <div class="timeOptions">
-            <i class="fas fa-clock" data-title="Time"></i>
-            <i class="fas fa-stopwatch" data-title="StopWatch"></i>
-            <i class="fas fa-clock" data-title="CountDown"></i>
-          </div>
-          <div class="manDiv">
-            <p id="clock"></p>
-          </div>
-        </div>
+    <section>
+      <p id="countDown">0</p>
+      <div class="buttons">
+        <button class="start_btn">Start</button>
+        <button class="reset_btn">Reset</button>
+        <button class="stop_btn">Stop</button>
+        <button class="time_btn">getTime</button>
+        <button class="clear_btn">clearTime</button>
       </div>
-    </div>
+      <div class="resetValue">
+        
+      </div>
+    </section>
   </body>
     <script src="script.js"></script>
   </body>
