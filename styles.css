@@ -1,0 +1,24 @@
+#outer {
+  background-color: lightcoral;
+  padding: 40px;
+  border: 3px solid red;
+}
+
+#middle {
+  background-color: lightblue;
+  padding: 30px;
+  border: 3px solid blue;
+}
+
+#inner {
+  background-color: lightgreen;
+  padding: 20px;
+  border: 3px solid green;
+}
+
+div {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
