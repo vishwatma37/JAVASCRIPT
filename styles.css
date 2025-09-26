@@ -1,24 +1,23 @@
-#outer {
-  background-color: lightcoral;
-  padding: 40px;
-  border: 3px solid red;
-}
-
-#middle {
-  background-color: lightblue;
-  padding: 30px;
-  border: 3px solid blue;
-}
-
-#inner {
-  background-color: lightgreen;
-  padding: 20px;
-  border: 3px solid green;
-}
-
-div {
-  cursor: pointer;
-  font-size: 18px;
+#fetchjoke {
+  background-color: #f9c74f;
+  border: none;
+  color: #333;
+  padding: 12px 24px;
+  font-size: 16px;
   font-weight: bold;
-  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#fetchjoke:hover {
+  background-color: #f9844a;
+  transform: scale(1.05);
+}
+
+#fetchjoke:active {
+  background-color: #f3722c;
+  transform: scale(0.98);
 }
