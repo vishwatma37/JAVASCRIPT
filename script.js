@@ -1,26 +1,22 @@
 const apiBody = document.querySelector(".api_body");
-
-// const apiUrl = "https://jsonplaceholder.typicode.com/todos/1"
-
 const apiUrl = "https://icanhazdadjoke.com";
-const fetchData = () => {
-  fetch(apiUrl, {
+
+// async function fetchData() {
+  const fetchData = async () => {
+  try { 
+  const res = await fetch(apiUrl, {
     headers: {
       Accept: "application/json",
     },
-  })
-    .then((res) => {
-      console.log(res);
-      return res.json();
-    })
-    .then((data) => {
-      console.log(data.joke);
-      apiBody.innerHTML = data.joke;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
+  });
+  const data = await res.json();
+  console.log(data.joke);
+  apiBody.innerHTML = data.joke;
+  } catch(error){
+    apiBody.innerHTML = 'error!!!!!!';
+      console.log(error);
+  }
+}
 
 fetchData();
 
